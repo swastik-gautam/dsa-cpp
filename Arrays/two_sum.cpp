@@ -1,6 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Problem: Two Sum
+
+// Description:
+// Given an array of integers and a target, return indices of two numbers
+// such that they add up to the target.
+
+// Approach:
+// Use unordered_map to store visited elements.
+// For each element, check if (target - current) already exists.
+// If yes → solution found.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 vector<int> twoSum(vector<int>& nums, int target) {
     unordered_map<int, int> mp;
 

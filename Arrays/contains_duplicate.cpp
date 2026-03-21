@@ -1,6 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Problem: Contains Duplicate
+
+// Description:
+// Check if any element appears more than once in the array.
+
+// Approach:
+// Use unordered_set to track elements seen so far.
+// If element already exists → duplicate found.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 bool containsDuplicate(vector<int>& nums) {
     unordered_set<int> st;
 
